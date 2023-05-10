@@ -1,0 +1,12 @@
+.casilla-tablero {
+    height: 4em;
+    width: 4em;
+    margin: 0em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+    user-select: none;
+    border: 0.3em solid black;
+}

@@ -1,0 +1,59 @@
+/* INICIALIZAMOS LOS MÁRGENES DE LA APLICACIÓN */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* ETIQUETAS DE ESTILO DE LA APP */
+html,
+body {
+  font-size: 18px;
+  background-color: rgb(38, 38, 185);
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.contenedor-botones {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.contenedor-turnos {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor-turnos .btn-turnos {
+  background-color: #4CAF50;
+  border: 0.15em solid green;
+  color: white;
+  padding: 0.1em;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bolder;
+  cursor: pointer;
+  width: 20em;
+  display: block;
+}
+
+.contenedor-turnos .btn-turnos:not(:last-child) {
+  border-bottom: none; /* Esto sirve para prevenir dobles bordes en la lista de botones */
+}
+
+.contenedor-turnos .btn-turnos:hover {
+  transition-duration: 0.5s;
+  background-color: #3e8e41;
+}

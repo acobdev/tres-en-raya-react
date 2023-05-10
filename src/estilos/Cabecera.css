@@ -1,0 +1,57 @@
+
+/* ROTACIÓN DEL LOGO DE REACT */
+.logo-react {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .logo-react {
+      animation: logo-react-spin infinite 20s linear;
+    }
+  }
+
+  @keyframes logo-react-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  /* ESTILOS DEL COMPONENTE */
+  .contenedor-cabecera {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 3em;
+  }
+
+  .titulo-app {
+    max-width: 940px;
+    margin-bottom: 0.5rem;
+    font-size: 2.8em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+  }
+
+  .subtitulo-app {
+    max-width: 860px;
+    font-size: 1.7em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+  }
+
+  .contenedor-imagen {
+    height: 60%;
+    width: auto;
+  }
+
+  .logo-react {
+    height: 100%;
+    width: auto;
+  }

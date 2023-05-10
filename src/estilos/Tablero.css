@@ -1,0 +1,12 @@
+.contenedor-tablero {
+    width: 30vw;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3em;
+    margin-left: 3em;
+}
+
+.fila-tablero {
+    margin: 0em;
+    display:flex;
+}

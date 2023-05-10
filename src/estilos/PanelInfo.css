@@ -1,0 +1,29 @@
+.contenedor-info {
+    width: 50vw;
+    display: table;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../imagenes/papel.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 5%;
+    margin-right: 2em;
+    margin-bottom: 2em;
+}
+
+.info-turno {
+    align-items: center;
+    justify-content: center;
+    font-size: 2.25em;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
+    margin: 1em;
+}
+
+.texto-ganador {
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    color: darkred;
+    margin: 0.75em 0em;
+}
