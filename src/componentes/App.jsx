@@ -7,23 +7,22 @@ import '../estilos/App.css';
 
 function App() {
   
-  /* REACT HOOK PARA GUARDAR EL HISTORIAL DE TURNOS DE LA PARTIDA: */
+  //React hook para guardar el historial de movimientos de la partida:
   const [historial, setHistorial] = useState([Array(9).fill(null)]);
 
-  /* REACT HOOK PARA GUARDAR EL NÚMERO DE TURNOS DE LA PARTIDA */
+  //React hook para guardar el número de turnos de la partida:
   const [contadorTurnos, setContadorTurnos] = useState(0);
   
-  /* BOOLEANO JS EN EL QUE SE GUARDARÁ EL JUGADOR DEL TURNO ACTUAL */
+  //Booleano que controla el turno de cada uno de los dos jugadores:
   const esTurnoDeX = contadorTurnos % 2 === 0;
 
-  //Guardamos la matriz de casillas que conforma el turno actual de la partida:
+  //Matriz de casillas que conforma el turno actual de la partida:
   const movimientoActual = historial[contadorTurnos];
-
 
   //Función lógica para calcular el ganador del juego:
   function calcularGanador(casillas) 
   {
-    const posiblesCombinaciones = [
+    const combinacionesGanadoras = [
       [0, 1, 2],
       [3, 4, 5],
       [6, 7, 8],
@@ -34,9 +33,9 @@ function App() {
       [2, 4, 6]
     ];
 
-    for (let i = 0; i < posiblesCombinaciones.length; i++) {
-
-      const [a, b, c] = posiblesCombinaciones[i];
+    for (let i = 0; i < combinacionesGanadoras.length; i++) 
+    {
+      const [a, b, c] = combinacionesGanadoras[i];
 
       if (casillas[a] && casillas[a] === casillas[b] && casillas[a] === casillas[c]) {
         return casillas[a];
@@ -59,6 +58,7 @@ function App() {
     setContadorTurnos(turnoMovimiento);
   }
 
+  //Código JS para controlar el historial de movimientos del juego:
   const listaMovimientos = historial.map((casillas, movimiento) => {
     let etiquetaBtn = "VOLVER AL TURNO #" + (movimiento + 1);
 
